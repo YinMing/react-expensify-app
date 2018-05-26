@@ -14,7 +14,7 @@ import moment from 'moment';
 
   firebase.initializeApp(config);
   
-  const database =   firebase.database();
+  const database = firebase.database();
 
 
   //ref -> reference a specify path to db
