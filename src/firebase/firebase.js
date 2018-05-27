@@ -15,8 +15,7 @@ import moment from 'moment';
   firebase.initializeApp(config);
   
   const database = firebase.database();
-
-
+  const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
   //ref -> reference a specify path to db
   //set -> set the value to the reference
   //  database.ref().set({
@@ -276,4 +275,4 @@ import moment from 'moment';
 //   console.log(snapshot.key, snapshot.val());
 // });
 
-export {firebase, database as default};
+export {firebase, googleAuthProvider, database as default};
